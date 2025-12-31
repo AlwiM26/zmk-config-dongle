@@ -65,7 +65,7 @@
         compatible = "zmk,keymap";
 
         default_layer {
-            display-name = "HOME"
+            display-name = "HOME";
             bindings = <
 &kp Q           &kp W           &kp E        &kp R             &kp T        &kp Y        &kp U              &kp I        &kp O            &kp P
 &hm LEFT_GUI A  &hm LEFT_ALT S  &hm LCTRL D  &hm LEFT_SHIFT F  &kp G        &kp H        &hm RIGHT_SHIFT J  &hm RCTRL K  &hm RIGHT_ALT L  &hm RIGHT_GUI SEMICOLON
@@ -75,7 +75,7 @@
         };
 
         lower_layer {
-            display-name = "NUM"
+            display-name = "NUM";
             bindings = <
 &kp N1                &kp N2       &kp N3          &kp N4            &kp N5         &kp N6     &kp N7               &kp N8              &kp N9                     &kp N0
 &hm LGUI EXCLAMATION  &hm LALT AT  &hm LCTRL HASH  &hm LSHFT DOLLAR  &kp PERCENT    &kp CARET  &hm RSHFT AMPERSAND  &hm RCTRL ASTERISK  &hm RALT LEFT_PARENTHESIS  &hm RGUI RIGHT_PARENTHESIS
@@ -85,7 +85,7 @@
         };
 
         raise_layer {
-            display-name = "NAV"
+            display-name = "NAV";
             bindings = <
 &kp F1           &kp F2           &kp F3        &kp F4             &none      &kp END     &kp PAGE_DOWN  &kp PAGE_UP      &kp HOME    &none
 &hm LEFT_GUI F5  &hm LEFT_ALT F6  &hm LCTRL F7  &hm LEFT_SHIFT F8  &kp LC(C)  &kp LEFT    &kp DOWN       &kp UP           &kp RIGHT   &none
@@ -94,8 +94,8 @@
             >;
         };
 
-        extra_1 {
-            display-name = "SETTINGS"
+        settings_layer {
+            display-name = "SETTINGS";
             bindings = <
 &none  &none  &none  &none  &bt BT_SEL 0  &bt BT_SEL 1  &none  &none  &none  &none
 &none  &none  &none  &none  &bt BT_SEL 2  &bt BT_CLR    &none  &none  &none  &none
@@ -104,14 +104,7 @@
             >;
         };
 
-        extra_2 {
-            status = "reserved";
-        };
-
-        extra_3 {
-            status = "reserved";
-        };
     };
 };
-;
+
 

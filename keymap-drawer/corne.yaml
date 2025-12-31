@@ -1,6 +1,6 @@
 layout: {zmk_keyboard: corne}
 layers:
-  Home-0:
+  HOME:
   - Q
   - W
   - E
@@ -32,12 +32,12 @@ layers:
   - .
   - /
   - ''
-  - {t: ↹, h: Num-1}
-  - {t: ␣, h: Nav-2}
-  - {t: ENTER, h: Nav-2}
-  - {t: BACKSPACE, h: Num-1}
+  - {t: ↹, h: NUM}
+  - {t: ␣, h: NAV}
+  - {t: ENTER, h: NAV}
+  - {t: BACKSPACE, h: NUM}
   - ''
-  Num-1:
+  NUM:
   - '1'
   - '2'
   - '3'
@@ -74,7 +74,7 @@ layers:
   - '&save_vim'
   - Ctl+BACKSPACE
   - ''
-  Nav-2:
+  NAV:
   - F1
   - F2
   - F3
@@ -111,7 +111,7 @@ layers:
   - ⏯
   - ''
   - ''
-  Setting-3:
+  SETTINGS:
   - ''
   - ''
   - ''
@@ -156,4 +156,4 @@ combos:
 - p: [17, 18]
   k: ''''
 - p: [32, 33]
-  k: {t: Setting-3, h: sticky}
+  k: {t: SETTINGS, h: sticky}
