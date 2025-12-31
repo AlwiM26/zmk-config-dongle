@@ -1,9 +1,43 @@
-layout: {qmk_keyboard: corne_rotated, layout_name: LAYOUT_split_3x6_3}
+layout: {zmk_keyboard: corne}
 layers:
-  BAS: [↹, Q, W, E, R, T, Y, U, I, O, P, '$$mdi:backspace-outline$$', '$$mdi:apple-keyboard-control$$', A, S, D, F, G, H, J, K, L, ;, '''', '$$mdi:apple-keyboard-shift$$',
-    Z, X, C, V, B, N, M, ',', ., /, Esc, '$$mdi:apple-keyboard-command$$', LOW, ␣, ⏎, RAI, '$$mdi:apple-keyboard-option$$']
-  LOW:
-  - ↹
+  Home-0:
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - {t: A, h: LEFT GUI}
+  - {t: S, h: LEFT ALT}
+  - {t: D, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: F, h: LEFT SHIFT}
+  - G
+  - H
+  - {t: J, h: RIGHT SHIFT}
+  - {t: K, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: L, h: RIGHT ALT}
+  - {t: ;, h: RIGHT GUI}
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - N
+  - M
+  - ','
+  - .
+  - /
+  - ''
+  - {t: ↹, h: Num-1}
+  - {t: ␣, h: Nav-2}
+  - {t: ENTER, h: Nav-2}
+  - {t: BACKSPACE, h: Num-1}
+  - ''
+  Num-1:
   - '1'
   - '2'
   - '3'
@@ -14,77 +48,112 @@ layers:
   - '8'
   - '9'
   - '0'
-  - $$mdi:backspace-outline$$
-  - BT CLR
-  - BT 1
-  - BT 2
-  - BT 3
-  - BT 4
-  - BT 5
-  - ←
-  - ↓
-  - ↑
-  - →
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - $$mdi:apple-keyboard-shift$$
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - $$mdi:apple-keyboard-command$$
-  - {type: held}
-  - ␣
-  - ⏎
-  - {t: ▽, type: trans}
-  - $$mdi:apple-keyboard-option$$
-  RAI:
-  - ↹
-  - '!'
-  - '@'
-  - '#'
-  - $
+  - {t: '!', h: '$$mdi:apple-keyboard-command$$'}
+  - {t: '@', h: '$$mdi:apple-keyboard-option$$'}
+  - {t: '#', h: '$$mdi:apple-keyboard-control$$'}
+  - {t: $, h: '$$mdi:apple-keyboard-shift$$'}
   - '%'
   - ^
-  - AMPS
-  - KP MULTIPLY
-  - (
-  - )
-  - $$mdi:backspace-outline$$
-  - $$mdi:apple-keyboard-control$$
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {t: AMPERSAND, h: '$$mdi:apple-keyboard-shift$$'}
+  - {t: '*', h: '$$mdi:apple-keyboard-control$$'}
+  - {t: (, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: ), h: '$$mdi:apple-keyboard-command$$'}
+  - ''
+  - ''
+  - ''
+  - ''
+  - '`'
+  - \
   - '-'
   - '='
   - '['
   - ']'
-  - \
-  - '`'
-  - $$mdi:apple-keyboard-shift$$
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - _
-  - +
-  - '{'
-  - '}'
-  - '|'
-  - '~'
-  - $$mdi:apple-keyboard-command$$
-  - '&studio_unlock'
-  - ␣
-  - ⏎
-  - {t: '&studio_unlock', type: held}
-  - $$mdi:apple-keyboard-option$$
+  - ''
+  - {t: DELETE, type: held}
+  - Gui+␣
+  - '&save_vim'
+  - Ctl+BACKSPACE
+  - ''
+  Nav-2:
+  - F1
+  - F2
+  - F3
+  - F4
+  - ''
+  - End
+  - PAGE DOWN
+  - PAGE UP
+  - Home
+  - ''
+  - {t: F5, h: LEFT GUI}
+  - {t: F6, h: LEFT ALT}
+  - {t: F7, h: '$$mdi:apple-keyboard-control$$'}
+  - {t: F8, h: LEFT SHIFT}
+  - Ctl+C
+  - ←
+  - ↓
+  - ↑
+  - →
+  - ''
+  - F9
+  - F10
+  - F11
+  - F12
+  - Ctl+V
+  - ⏮️
+  - Vol Down
+  - VOLUME UP
+  - ⏭️
+  - ''
+  - ''
+  - ''
+  - {type: held}
+  - ⏯
+  - ''
+  - ''
+  Setting-3:
+  - ''
+  - ''
+  - ''
+  - ''
+  - BT 1
+  - BT 2
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - BT 3
+  - BT CLR
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - OUT TOG
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {type: held}
+  - {type: held}
+  - ''
+  - ''
+combos:
+- p: [13, 16]
+  k: Caps Lock
+- p: [1, 2]
+  k: ESCAPE
+- p: [17, 18]
+  k: ''''
+- p: [32, 33]
+  k: {t: Setting-3, h: sticky}
