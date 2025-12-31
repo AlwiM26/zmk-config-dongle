@@ -1,43 +1,83 @@
 layout: {zmk_keyboard: corne}
 layers:
-  HOME:
-  - Q
-  - W
-  - E
-  - R
-  - T
-  - Y
-  - U
-  - I
-  - O
-  - P
-  - {t: A, h: LEFT GUI}
-  - {t: S, h: LEFT ALT}
-  - {t: D, h: '$$mdi:apple-keyboard-control$$'}
-  - {t: F, h: LEFT SHIFT}
-  - G
-  - H
-  - {t: J, h: RIGHT SHIFT}
-  - {t: K, h: '$$mdi:apple-keyboard-control$$'}
-  - {t: L, h: RIGHT ALT}
-  - {t: ;, h: RIGHT GUI}
-  - Z
-  - X
-  - C
-  - V
-  - B
-  - N
-  - M
-  - ','
-  - .
-  - /
-  - ''
-  - {t: ↹, h: NUM}
-  - {t: ␣, h: NAV}
-  - {t: ENTER, h: NAV}
-  - {t: BACKSPACE, h: NUM}
-  - ''
-  NUM:
+  BAS: [Esc, '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '`', ↹, Q, W, E, R, T, Y, U, I, O, P, '-', '$$mdi:apple-keyboard-control$$', A, S, D, F, G, H, J, K,
+    L, ;, '''', '$$mdi:apple-keyboard-shift$$', Z, X, C, V, B, '[', ']', N, M, ',', ., /, '$$mdi:apple-keyboard-shift$$', '$$mdi:apple-keyboard-control$$', '$$mdi:apple-keyboard-option$$',
+    '$$mdi:apple-keyboard-command$$', LOW, ␣, ⏎, RAI, '$$mdi:backspace-outline$$', '$$mdi:apple-keyboard-command$$', '$$mdi:apple-keyboard-option$$']
+  LOW:
+  - BT CLR
+  - BT 1
+  - BT 2
+  - BT 3
+  - BT 4
+  - BT 5
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - F1
+  - F2
+  - F3
+  - F4
+  - F5
+  - F6
+  - F7
+  - F8
+  - F9
+  - F10
+  - F11
+  - F12
+  - '`'
+  - '!'
+  - '@'
+  - '#'
+  - $
+  - '%'
+  - ^
+  - AMPS
+  - '*'
+  - (
+  - )
+  - '~'
+  - {t: ▽, type: trans}
+  - EP ON
+  - EP OFF
+  - EP TOG
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '-'
+  - +
+  - '{'
+  - '}'
+  - '|'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  RAI:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '`'
   - '1'
   - '2'
   - '3'
@@ -48,112 +88,40 @@ layers:
   - '8'
   - '9'
   - '0'
-  - {t: '!', h: '$$mdi:apple-keyboard-command$$'}
-  - {t: '@', h: '$$mdi:apple-keyboard-option$$'}
-  - {t: '#', h: '$$mdi:apple-keyboard-control$$'}
-  - {t: $, h: '$$mdi:apple-keyboard-shift$$'}
-  - '%'
-  - ^
-  - {t: AMPERSAND, h: '$$mdi:apple-keyboard-shift$$'}
-  - {t: '*', h: '$$mdi:apple-keyboard-control$$'}
-  - {t: (, h: '$$mdi:apple-keyboard-option$$'}
-  - {t: ), h: '$$mdi:apple-keyboard-command$$'}
-  - ''
-  - ''
-  - ''
-  - ''
-  - '`'
-  - \
-  - '-'
-  - '='
-  - '['
-  - ']'
-  - ''
-  - {t: DELETE, type: held}
-  - Gui+␣
-  - '&save_vim'
-  - Ctl+BACKSPACE
-  - ''
-  NAV:
+  - {t: ▽, type: trans}
   - F1
   - F2
   - F3
   - F4
-  - ''
-  - End
-  - PAGE DOWN
-  - PAGE UP
-  - Home
-  - ''
-  - {t: F5, h: LEFT GUI}
-  - {t: F6, h: LEFT ALT}
-  - {t: F7, h: '$$mdi:apple-keyboard-control$$'}
-  - {t: F8, h: LEFT SHIFT}
-  - Ctl+C
+  - F5
+  - F6
+  - {t: ▽, type: trans}
   - ←
   - ↓
   - ↑
   - →
-  - ''
+  - {t: ▽, type: trans}
+  - F7
+  - F8
   - F9
   - F10
   - F11
   - F12
-  - Ctl+V
-  - ⏮️
-  - Vol Down
-  - VOLUME UP
-  - ⏭️
-  - ''
-  - ''
-  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - KP PLUS
+  - '-'
+  - '='
+  - '['
+  - ']'
+  - \
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {type: held}
-  - ⏯
-  - ''
-  - ''
-  SETTINGS:
-  - ''
-  - ''
-  - ''
-  - ''
-  - BT 1
-  - BT 2
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - BT 3
-  - BT CLR
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - OUT TOG
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - {type: held}
-  - {type: held}
-  - ''
-  - ''
-combos:
-- p: [13, 16]
-  k: Caps Lock
-- p: [1, 2]
-  k: ESCAPE
-- p: [17, 18]
-  k: ''''
-- p: [32, 33]
-  k: {t: SETTINGS, h: sticky}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
