@@ -5,6 +5,8 @@ manifest:
     # dongle_display
     - name: AlwiM26
       url-base: https://github.com/AlwiM26
+    - name: englmaxi
+      url-base: https://github.com/englmaxi
   projects:
     - name: zmk
       remote: zmkfirmware
