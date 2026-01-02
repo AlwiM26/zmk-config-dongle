@@ -4,7 +4,7 @@ manifest:
       url-base: https://github.com/zmkfirmware
     # dongle_display
     - name: englmaxi
-      url-base: https://github.com/englmaxi
+      url-base: https://github.com/AlwiM26
     # nice_oled - nice_epaper - dongle_display!view - oled Adapter
     - name: mctechnology17
       url-base: https://github.com/mctechnology17
