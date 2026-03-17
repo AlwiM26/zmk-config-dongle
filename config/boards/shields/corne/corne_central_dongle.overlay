@@ -19,8 +19,6 @@
         events = <0>;
     };
 
-    / {
-
     leds {
         compatible = "gpio-leds";
         user_led: led_0 {
